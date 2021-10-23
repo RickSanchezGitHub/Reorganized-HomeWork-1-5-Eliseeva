@@ -13,7 +13,7 @@ namespace HomeWork._3
         {
             int number = HelpersForConsole.GetNumberFromUser("введите число ");
             int power = HelpersForConsole.GetNumberFromUser("введите степень");
-            int result = WorkingForNmbers.CalcPow(number, power);
+            int result = HeplersForHW3.CalcPow(number, power);
             HelpersForConsole.OutPutInConsole(1, $"{result}");
         }
 
@@ -23,7 +23,7 @@ namespace HomeWork._3
             HelpersForConsole.OutPutInConsole(2, $" ");
             for (int i = 1; i <= 1000; i++)
             {
-                int index = WorkingForNmbers.SearchForNumbersDivisibleByNumber(number, i);
+                int index = HeplersForHW3.SearchForNumbersDivisibleByNumber(number, i);
                 Console.WriteLine(index);
             }
         }
@@ -31,14 +31,14 @@ namespace HomeWork._3
         public void SolutionTask3()
         {
             int number = HelpersForConsole.GetNumberFromUser("введите число");
-            int result = WorkingForNmbers.GetCountNumbersWhoseSquareLessThanNumber(number);
+            int result = HeplersForHW3.GetCountNumbersWhoseSquareLessThanNumber(number);
             HelpersForConsole.OutPutInConsole(3, $"{result}");
         }
 
         public void SolutionTask4()
         {
             int number = HelpersForConsole.GetNumberFromUser("введите число");
-            int result = WorkingForNmbers.GetLargestDivisor(number);
+            int result = HeplersForHW3.GetLargestDivisor(number);
             HelpersForConsole.OutPutInConsole(4, $"{result}");
         }
 
@@ -46,14 +46,14 @@ namespace HomeWork._3
         {
             int startRange = HelpersForConsole.GetNumberFromUser("введите число a");
             int endRange = HelpersForConsole.GetNumberFromUser("введите число b");
-            int result = WorkingForNmbers.GetCountOfNumbersDivisibleBySevenWithinRange(startRange, endRange);
+            int result = HeplersForHW3.GetCountOfNumbersDivisibleBySevenWithinRange(startRange, endRange);
             HelpersForConsole.OutPutInConsole(5, $"{result}");
         }
 
         public void SolutionTask6()
         {
             int number = HelpersForConsole.GetNumberFromUser("введите число");
-            int result = WorkingForNmbers.NumberOfFibonacciSeries(number);
+            int result = HeplersForHW3.NumberOfFibonacciSeries(number);
             HelpersForConsole.OutPutInConsole(6, $"{result}");
         }
         
@@ -61,28 +61,28 @@ namespace HomeWork._3
         {
             int number1 = HelpersForConsole.GetNumberFromUser("введите первое число");
             int number2 = HelpersForConsole.GetNumberFromUser("введите второе число");
-            int result = WorkingForNmbers.GetGreatestCommonDivisor(number1, number2);
+            int result = HeplersForHW3.GetGreatestCommonDivisor(number1, number2);
             HelpersForConsole.OutPutInConsole(7, $"{result}");
         }
        
         public void SolutionTask8()
         {
             int number = HelpersForConsole.GetNumberFromUser("введите первое число");
-            double result = WorkingForNmbers.GetNumberByMethodOfHalfDivision(number);
+            double result = HeplersForHW3.GetNumberByMethodOfHalfDivision(number);
             HelpersForConsole.OutPutInConsole(8, $"{result}");
         }
         
         public void SolutionTask9()
         {
             int number = HelpersForConsole.GetNumberFromUser("введите первое число");
-            int count = WorkingForNmbers.GetQuantityOddDigits(number);
+            int count = HeplersForHW3.GetQuantityOddDigits(number);
             HelpersForConsole.OutPutInConsole(9, $"{count}");
         }
         
         public void SolutionTask10()
         {
             int number = HelpersForConsole.GetNumberFromUser("введите  число");
-            int result = WorkingForNmbers.MirrorNumber(number);
+            int result = HeplersForHW3.MirrorNumber(number);
             HelpersForConsole.OutPutInConsole(10, $"{result}");
         }
 
@@ -90,7 +90,7 @@ namespace HomeWork._3
         {
             int number = HelpersForConsole.GetNumberFromUser("введите  число");
             HelpersForConsole.OutPutInConsole(11, $" ");
-            WorkingForNmbers.ShowNumberSumOfEvenGreaterThanSumOfOdd(number);
+            HeplersForHW3.ShowNumberSumOfEvenGreaterThanSumOfOdd(number);
 
         }
 
@@ -99,7 +99,7 @@ namespace HomeWork._3
             int number1 = HelpersForConsole.GetNumberFromUser("Введите первое число: ");
             int number2 = HelpersForConsole.GetNumberFromUser("Введите второе число: ");
             HelpersForConsole.OutPutInConsole(12, " ");
-            WorkingForNmbers.CheckIdenticalDigistInNumbers(number1, number2);
+            HeplersForHW3.CheckIdenticalDigistInNumbers(number1, number2);
         }
         
     }

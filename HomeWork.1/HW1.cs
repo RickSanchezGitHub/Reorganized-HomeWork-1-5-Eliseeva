@@ -13,7 +13,7 @@ namespace HomeWork1
         {
             int number1 = HelpersForConsole.GetNumberFromUser("введите число а");
             int number2 = HelpersForConsole.GetNumberFromUser("введите число b");
-            double result = WorkingForNmbers.CalcFormula(number1, number2);
+            double result = HelpersFowHW1.CalcFormula(number1, number2);
             HelpersForConsole.OutPutInConsole(1, $"{result}");
         }
 
@@ -23,15 +23,15 @@ namespace HomeWork1
             string  strA = Convert.ToString(HelpersForConsole.GetNumberFromUser("Введите знвчение а"));
             string  strB = Convert.ToString(HelpersForConsole.GetNumberFromUser("Введите знвчение b"));
             HelpersForConsole.OutPutInConsole(2, $" ");
-            WorkingForNmbers.SwapStrings(ref strA, ref strB);
+            HelpersFowHW1.SwapStrings(ref strA, ref strB);
         }
 
         public void SolutionTask3()
         {
             int number1 = HelpersForConsole.GetNumberFromUser("введите число а");
             int number2 = HelpersForConsole.GetNumberFromUser("введите число b");
-            int resultDivision = WorkingForNmbers.DivideTheNumber(number1, number2);
-            int resultRemains = WorkingForNmbers.RemainderOfDivisionOfNumber(number1, number2);
+            int resultDivision = HelpersFowHW1.DivideTheNumber(number1, number2);
+            int resultRemains = HelpersFowHW1.RemainderOfDivisionOfNumber(number1, number2);
             HelpersForConsole.OutPutInConsole(3, $"{resultDivision} {resultRemains}");
         }
 
@@ -40,23 +40,19 @@ namespace HomeWork1
             int a = HelpersForConsole.GetNumberFromUser("введите число а");
             int b = HelpersForConsole.GetNumberFromUser("введите число b");
             int c = HelpersForConsole.GetNumberFromUser("введите число c");
-            double x = SolveLinearEquation(a, b, c);
+            double x = HelpersFowHW1.SolveLinearEquation(a, b, c);
             HelpersForConsole.OutPutInConsole(4, $" x = {x}");
 
         }
-        private double SolveLinearEquation(int a, int b, int c)
-        {
-            double resulrX = (c - b) / a;
-            return resulrX;
-        }
+       
         public void SolutionTask5()
         {
             int x1 = HelpersForConsole.GetNumberFromUser("введите координату х1");
             int y1 = HelpersForConsole.GetNumberFromUser("введите координату у1");
             int x2 = HelpersForConsole.GetNumberFromUser("введите координату х2");
             int y2 = HelpersForConsole.GetNumberFromUser("введите координату y2");
-            double k = WorkingForNmbers.CalcCoefficientOfEquationK(x1, y1, x2, y2);
-            double b = WorkingForNmbers.CalcCoefficientOfEquationB(x1, y1, x2, y2);
+            double k = HelpersFowHW1.CalcCoefficientOfEquationK(x1, y1, x2, y2);
+            double b = HelpersFowHW1.CalcCoefficientOfEquationB(x1, y1, x2, y2);
             HelpersForConsole.OutPutInConsole(5, $"Y ={k}X+{b}");
         } 
     }
