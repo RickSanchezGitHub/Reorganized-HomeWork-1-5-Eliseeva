@@ -7,8 +7,8 @@ namespace HomeWork._5
     {
         public void SolutionTask1()
         {
-            int countStrings = int.Parse(HelpersForConsole.GetNumberFromUser("Введите количество строк"));
-            int countColumns = int.Parse(HelpersForConsole.GetNumberFromUser("Введите количество столбцов"));
+            int countStrings = HelpersForConsole.GetNumberFromUser("Введите количество строк");
+            int countColumns = HelpersForConsole.GetNumberFromUser("Введите количество столбцов");
             int[,] array = new int[countStrings, countColumns];
             WorkingWithArrayTwoDim.FillingRandomTwoDimArray(array);
             HelpersForConsole.ShowAnExistingArray(array);
@@ -20,8 +20,8 @@ namespace HomeWork._5
 
         public void SolutionTask2()
         {
-            int countStrings = int.Parse(HelpersForConsole.GetNumberFromUser("Введите количество строк"));
-            int countColumns = int.Parse(HelpersForConsole.GetNumberFromUser("Введите количество столбцов"));
+            int countStrings = HelpersForConsole.GetNumberFromUser("Введите количество строк");
+            int countColumns = HelpersForConsole.GetNumberFromUser("Введите количество столбцов");
             int[,] array = new int[countStrings, countColumns];
             WorkingWithArrayTwoDim.FillingRandomTwoDimArray(array);
             HelpersForConsole.ShowAnExistingArray(array);
@@ -31,8 +31,8 @@ namespace HomeWork._5
 
         public void SolutionTask3()
         {
-            int countStrings = int.Parse(HelpersForConsole.GetNumberFromUser("Введите количество строк"));
-            int countColumns = int.Parse(HelpersForConsole.GetNumberFromUser("Введите количество столбцов"));
+            int countStrings = HelpersForConsole.GetNumberFromUser("Введите количество строк");
+            int countColumns = HelpersForConsole.GetNumberFromUser("Введите количество столбцов");
             int[,] array = new int[countStrings, countColumns];
             WorkingWithArrayTwoDim.FillingRandomTwoDimArray(array);
             HelpersForConsole.ShowAnExistingArray(array);
@@ -41,8 +41,8 @@ namespace HomeWork._5
 
         public void SolutionTask4()
         {
-            int countStrings = int.Parse(HelpersForConsole.GetNumberFromUser("Введите количество строк"));
-            int countColumns = int.Parse(HelpersForConsole.GetNumberFromUser("Введите количество столбцов"));
+            int countStrings = HelpersForConsole.GetNumberFromUser("Введите количество строк");
+            int countColumns = HelpersForConsole.GetNumberFromUser("Введите количество столбцов");
             int[,] array = new int[countStrings, countColumns];
             WorkingWithArrayTwoDim.FillingRandomTwoDimArray(array);
             HelpersForConsole.ShowAnExistingArray(array);            
@@ -51,8 +51,8 @@ namespace HomeWork._5
 
         public void SolutionTask5()
         {
-            int countStrings = int.Parse(HelpersForConsole.GetNumberFromUser("Введите количество строк"));
-            int countColumns = int.Parse(HelpersForConsole.GetNumberFromUser("Введите количество столбцов"));
+            int countStrings = HelpersForConsole.GetNumberFromUser("Введите количество строк");
+            int countColumns = HelpersForConsole.GetNumberFromUser("Введите количество столбцов");
             int[,] array = new int[countStrings, countColumns];
             WorkingWithArrayTwoDim.FillingRandomTwoDimArray(array);
             HelpersForConsole.ShowAnExistingArray(array);
@@ -62,7 +62,7 @@ namespace HomeWork._5
        
         public void SolutionTask6()
         {
-            int countStrings = int.Parse(HelpersForConsole.GetNumberFromUser("Введите количество строк/столбцов"));
+            int countStrings = HelpersForConsole.GetNumberFromUser("Введите количество строк/столбцов");
             int countColumns = countStrings;
             int[,] array = new int[countStrings, countColumns];
             WorkingWithArrayTwoDim.FillingRandomTwoDimArray(array);

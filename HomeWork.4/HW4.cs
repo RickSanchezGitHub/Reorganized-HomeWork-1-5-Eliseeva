@@ -8,7 +8,7 @@ namespace HomeWork._4
 
         public void SolutionTask1()
         {
-            int length = int.Parse(HelpersForConsole.GetNumberFromUser("Введите длину массива"));
+            int length = HelpersForConsole.GetNumberFromUser("Введите длину массива");
             int[] array = new int[length];
             WorkingWithArrayOneDim.FillingRandomAnOneDimArray(array);
             HelpersForConsole.OutPutOneDimArrayToConsole(array);
@@ -18,7 +18,7 @@ namespace HomeWork._4
        
         public void SolutionTask2()
         {
-            int length = int.Parse(HelpersForConsole.GetNumberFromUser("Введите длину массива"));
+            int length = HelpersForConsole.GetNumberFromUser("Введите длину массива");
             int[] array = new int[length];
             WorkingWithArrayOneDim.FillingRandomAnOneDimArray(array);
             HelpersForConsole.OutPutOneDimArrayToConsole(array);
@@ -28,7 +28,7 @@ namespace HomeWork._4
         
         public void SolutionTask3()
         {
-            int length = int.Parse(HelpersForConsole.GetNumberFromUser("Введите длину массива"));
+            int length = HelpersForConsole.GetNumberFromUser("Введите длину массива");
             int[] array = new int[length];
             WorkingWithArrayOneDim.FillingRandomAnOneDimArray(array);
             HelpersForConsole.OutPutOneDimArrayToConsole(array);
@@ -38,7 +38,7 @@ namespace HomeWork._4
 
         public void SolutionTask4()
         {
-            int length = int.Parse(HelpersForConsole.GetNumberFromUser("Введите длину массива"));
+            int length = HelpersForConsole.GetNumberFromUser("Введите длину массива");
             int[] array = new int[length];
             WorkingWithArrayOneDim.FillingRandomAnOneDimArray(array);
             HelpersForConsole.OutPutOneDimArrayToConsole(array);
@@ -48,7 +48,7 @@ namespace HomeWork._4
 
         public void SolutionTask5()
         {
-            int length = int.Parse(HelpersForConsole.GetNumberFromUser("Введите длину массива"));
+            int length = HelpersForConsole.GetNumberFromUser("Введите длину массива");
             int[] array = new int[length];
             WorkingWithArrayOneDim.FillingRandomAnOneDimArray(array);
             HelpersForConsole.OutPutOneDimArrayToConsole(array);
@@ -58,7 +58,7 @@ namespace HomeWork._4
        
         public void SolutionTask6()
         {
-            int length = int.Parse(HelpersForConsole.GetNumberFromUser("Введите длину массива"));
+            int length = HelpersForConsole.GetNumberFromUser("Введите длину массива");
             int[] array = new int[length];
             WorkingWithArrayOneDim.FillingRandomAnOneDimArray(array);
             HelpersForConsole.OutPutOneDimArrayToConsole(array);
@@ -68,7 +68,7 @@ namespace HomeWork._4
         }        
         public void SolutionTask7()
         {
-            int length = int.Parse(HelpersForConsole.GetNumberFromUser("Введите длину массива"));
+            int length = HelpersForConsole.GetNumberFromUser("Введите длину массива");
             int[] array = new int[length];
             WorkingWithArrayOneDim.FillingRandomAnOneDimArray(array);
             HelpersForConsole.OutPutOneDimArrayToConsole(array);
@@ -76,9 +76,9 @@ namespace HomeWork._4
             HelpersForConsole.OutPutInConsole(7, $"{countOddElements}");
         }
 
-        public void SolutionTask8() // ДОРАБОТАТЬ
+        public void SolutionTask8() 
         {
-            int length = int.Parse(HelpersForConsole.GetNumberFromUser("Введите длину массива"));
+            int length = HelpersForConsole.GetNumberFromUser("Введите длину массива");
             int[] array = new int[length];
             WorkingWithArrayOneDim.FillingRandomAnOneDimArray(array);
             HelpersForConsole.OutPutOneDimArrayToConsole(array);
@@ -89,7 +89,7 @@ namespace HomeWork._4
 
         public void SolutionTask9()
         {
-            int length = int.Parse(HelpersForConsole.GetNumberFromUser("Введите длину массива"));
+            int length = HelpersForConsole.GetNumberFromUser("Введите длину массива");
             int[] array = new int[length];
             WorkingWithArrayOneDim.FillingRandomAnOneDimArray(array);
             HelpersForConsole.OutPutOneDimArrayToConsole(array);
@@ -99,7 +99,7 @@ namespace HomeWork._4
         }
         public void SolutionTask10()
         {
-            int length = int.Parse(HelpersForConsole.GetNumberFromUser("Введите длину массива"));
+            int length = HelpersForConsole.GetNumberFromUser("Введите длину массива");
             int[] array = new int[length];
             WorkingWithArrayOneDim.FillingRandomAnOneDimArray(array);
             HelpersForConsole.OutPutOneDimArrayToConsole(array);

@@ -96,25 +96,14 @@ namespace Core
             }
             return count;
         }
-        public static  void SwapHalvesOfArrayInPlaces(int[] array) //ДОРАБОТАТЬ
+        public static  void SwapHalvesOfArrayInPlaces(int[] array) 
         {
-            if (array.Length % 2 == 0)
+            for (int i = 0; i < array.Length / 2; i++)
             {
-                for (int i = 0; i < array.Length / 2; i++)
-                {
-                    int tmp = array[i];
-                    array[i] = array[i + array.Length / 2];
-                    array[i + array.Length / 2] = tmp;
-                }
-            }
-            else
-            {
-                for (int i = 0; i < array.Length / 2; i++)
-                {
-                    int tmp = array[i];
-                    array[i] = array[i + array.Length / 2 + 1];
-                    array[i + array.Length / 2 + 1] = tmp;
-                }
+                int tmp1 = array[i];
+                int tmp2 = array[(array.Length - 1) - i];
+                array[(array.Length - 1) - i] = tmp1;
+                array[i] = tmp2;
             }
         }
         public static void SortArrayByAscendingSelection(int[] array)

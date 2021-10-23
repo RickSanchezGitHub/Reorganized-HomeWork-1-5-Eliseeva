@@ -42,17 +42,17 @@ namespace AllTask
            hw3.SolutionTask11();
            hw3.SolutionTask12();
             */
-           HW4 hw4 = new HW4();
-           hw4.SolutionTask1();
-           hw4.SolutionTask2();
-           hw4.SolutionTask3();
-           hw4.SolutionTask4();
-           hw4.SolutionTask5();
-           hw4.SolutionTask6();
-           hw4.SolutionTask7();
-           hw4.SolutionTask8();
-           hw4.SolutionTask9();
-           hw4.SolutionTask10();
+            HW4 hw4 = new HW4();
+            //hw4.SolutionTask1();
+            //hw4.SolutionTask2();
+            //hw4.SolutionTask3();
+            //hw4.SolutionTask4();
+            //hw4.SolutionTask5();
+            //hw4.SolutionTask6();
+            //hw4.SolutionTask7();
+            hw4.SolutionTask8();
+           //hw4.SolutionTask9();
+           //hw4.SolutionTask10();
             /*
            HW5 hw5 = new HW5();
            hw5.SolutionTask1();
