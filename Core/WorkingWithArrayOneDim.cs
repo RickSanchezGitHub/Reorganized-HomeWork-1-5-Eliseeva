@@ -54,7 +54,7 @@ namespace Core
             }
             return indexMinElement;
         }
-        public static int GetIndexMaxArrayElemen(int[] array)
+        public static int GetIndexMaxArrayElement(int[] array)
         {
             int maxElenemt = array[0];
             int indexMaxElement = 0;
@@ -90,20 +90,24 @@ namespace Core
         public static int CountOddElementsAnArray(int[] array)
         {
             int count = 0;
-            for (int index = 0; index < array.Length; index += 2)
+            for (int index = 0; index < array.Length; index ++)
             {
-                  count++;                
+                if(array[index] % 2 != 0)
+                { 
+                  count++;                                
+                }
             }
             return count;
         }
         public static  void SwapHalvesOfArrayInPlaces(int[] array) 
         {
-            for (int i = 0; i < array.Length / 2; i++)
+            int centre = array.Length / 2;
+            for (int i = 0; i < centre; i++)
             {
-                int tmp1 = array[i];
+                int tmp1 = array[centre - 1 - i];
                 int tmp2 = array[(array.Length - 1) - i];
                 array[(array.Length - 1) - i] = tmp1;
-                array[i] = tmp2;
+                array[centre - 1 - i]  = tmp2;
             }
         }
         public static void SortArrayByAscendingSelection(int[] array)

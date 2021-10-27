@@ -2,7 +2,7 @@ using Core;
 using NUnit.Framework;
 using System;
 
-namespace HomeWork1.Tests
+namespace HWTests
 {
     public class HW1Tests
     {
@@ -25,7 +25,7 @@ namespace HomeWork1.Tests
             Assert.AreEqual(expected, actual);
         }
         [TestCase(25, 3, 8)]
-        public void Solution2DivideTheNumber(int number1, int number2, int expected)
+        public void Solution3DivideTheNumber(int number1, int number2, int expected)
         {
             int actual = HelpersForHW1.DivideTheNumber(number1, number2);
             Assert.AreEqual(expected, actual);
@@ -33,7 +33,7 @@ namespace HomeWork1.Tests
         [TestCase(25, 4, 1)]
         public void Solution3RemainderOfDivisionOfNumber(int number1, int number2, double expected)
         {
-            double actual = HelpersForHW1.RemainderOfDivisionOfNumber(number1, number2);
+            double actual = HelpersForHW1.GetRemainderOfDivisionOfNumber(number1, number2);
             Assert.AreEqual(expected, actual);
         }
         [TestCase(2, 4, 11, 3.5)]

@@ -7,7 +7,7 @@ namespace Core
         //общие помощники для работы с консолью
         public static int GetNumberFromUser(string message)
         {
-            Console.WriteLine($"\n {message}");
+            Console.WriteLine($" {message}");
             int  number = int.Parse(Console.ReadLine());
             Console.WriteLine();
             return number;

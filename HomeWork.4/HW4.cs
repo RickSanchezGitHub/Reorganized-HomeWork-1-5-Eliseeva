@@ -42,7 +42,7 @@ namespace HomeWork._4
             int[] array = new int[length];
             WorkingWithArrayOneDim.FillingRandomAnOneDimArray(array);
             HelpersForConsole.OutPutOneDimArrayToConsole(array);
-            int indexMaxElement = WorkingWithArrayOneDim.GetIndexMaxArrayElemen(array);
+            int indexMaxElement = WorkingWithArrayOneDim.GetIndexMaxArrayElement(array);
             HelpersForConsole.OutPutInConsole(4, $"{indexMaxElement}");
         }
 

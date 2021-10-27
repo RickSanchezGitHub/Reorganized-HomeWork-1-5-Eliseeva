@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Core
 {
-    public static class HeplersForHW3
+    public static class HelpersForHW3
     {
         public static int CalcPow(int number, int power)
         {
@@ -62,9 +62,9 @@ namespace Core
                 }
                 count++;
             }
-            return count;
+            return result;
         }
-        public static int NumberOfFibonacciSeries(int fibonachiN)
+        public static int GetTheSequenceNumberOfTheFibonacciSeries(int fibonachiN)
         {
             int count = 2;
             int odd = 1; // нечетное слогаемое
@@ -147,7 +147,8 @@ namespace Core
                     resultMethod = centre;
                 }
             }
-            return resultMethod;
+            double roundResult = Math.Round(resultMethod, 2);
+            return roundResult;
         }
         public static int GetQuantityOddDigits(int number)
         {
@@ -163,7 +164,7 @@ namespace Core
             }
             return count;
         }
-        public static int MirrorNumber(int number)
+        public static int GetMirrorNumber(int number)
         {
             int unnumber = 0;
             while (number != 0)
@@ -177,42 +178,33 @@ namespace Core
         public static void ShowNumberSumOfEvenGreaterThanSumOfOdd(int number)
         {
             int count = 1;
+            int unit;
             while (count < number)
             {
-                int numberCount = FindNumberSumOfEvenGreaterThanSumOfOdd(count);
-                Console.WriteLine(numberCount);
+                int oddSum = 0;
+                int evenSum = 0;
+                int countif = count;
+                while (countif != 0)
+                {
+                    unit = countif % 10;
+                    if (unit % 2 != 0)
+                    {
+                        oddSum = oddSum + unit;
+                    }
+                    else
+                    {
+                        evenSum = evenSum + unit;
+                    }
+                    countif /= 10;
+                }
+                if (oddSum < evenSum)
+                {
+                    Console.WriteLine(count);
+                }
                 count++;
             }
-
         }
-        private static int FindNumberSumOfEvenGreaterThanSumOfOdd(int count)
-        {
-            int unit;
-            int oddSum = 0;
-            int evenSum = 0;
-            int countif = count;
-            while (countif != 0)
-            {
-                unit = countif % 10;
-                if (unit % 2 != 0)
-                {
-                    oddSum = +unit;
-                }
-                else
-                {
-                    evenSum = +unit;
-                }
-                countif /= 10;
-            }
-            if (oddSum < evenSum)
-            {
-                return count;
-            }
-            else
-            {
-                return countif;
-            }
-        }
+        
         public static void CheckIdenticalDigistInNumbers(int number1, int number2)
         {
             bool fleg = false;

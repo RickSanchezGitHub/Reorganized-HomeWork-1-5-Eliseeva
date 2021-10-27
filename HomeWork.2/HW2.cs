@@ -13,7 +13,7 @@ namespace HomeWork._2
         {
             int a = HelpersForConsole.GetNumberFromUser("введите число а");
             int b = HelpersForConsole.GetNumberFromUser("введите число b");
-            int result = HeplersForHW2.AddOrMultiplyOrDependingOnTheNumbers(a, b);
+            int result = HelpersForHW2.AddOrMultiplyOrDependingOnTheNumbers(a, b);
             HelpersForConsole.OutPutInConsole(1, $"{result}");
         }
 
@@ -22,9 +22,9 @@ namespace HomeWork._2
         {
             int x = HelpersForConsole.GetNumberFromUser("введите координату х");
             int y = HelpersForConsole.GetNumberFromUser("введите координату у");
-            int varificationResult = HeplersForHW2.FindNumberOfCoordinatePlace(x, y);
+            int varificationResult = HelpersForHW2.FindNumberOfCoordinatePlace(x, y);
 
-            HelpersForConsole.OutPutInConsole(2, $"{HeplersForHW2.OutPutCoordinatePlaneNumber(varificationResult)}");
+            HelpersForConsole.OutPutInConsole(2, $"{HelpersForHW2.OutPutCoordinatePlaneNumberForConsole(varificationResult)}");
         }
         
 
@@ -34,7 +34,7 @@ namespace HomeWork._2
             int a = HelpersForConsole.GetNumberFromUser("введите число а");
             int b = HelpersForConsole.GetNumberFromUser("введите число b");
             int c = HelpersForConsole.GetNumberFromUser("введите число c");
-            string varificationResult = HeplersForHW2.SortVAriables(a, b, c);
+            string varificationResult = HelpersForHW2.SortVariables(a, b, c);
             HelpersForConsole.OutPutInConsole(3, $"{varificationResult}");
         }
         
@@ -43,25 +43,15 @@ namespace HomeWork._2
             int a = HelpersForConsole.GetNumberFromUser("введите число а");
             int b = HelpersForConsole.GetNumberFromUser("введите число b");
             int c = HelpersForConsole.GetNumberFromUser("введите число c");
-            double discriminant = HeplersForHW2.FindTheDiscriminant(a, b, c);
-            string resultEquation = HeplersForHW2.TrustTheDiscriminant(discriminant, a, b);
+            int discriminant = HelpersForHW2.FindTheDiscriminant(a, b, c);
+            string resultEquation = HelpersForHW2.TestingOfDiscriminant(discriminant, a, b);
             HelpersForConsole.OutPutInConsole(4, $"{resultEquation}");
         }
 
         public void SolutionTask5()
         {
             int number = HelpersForConsole.GetNumberFromUser("введите число ");
-            int dozen = HeplersForHW2.LookingForDozen(number);
-            int unit = HeplersForHW2.LookingForUnit(number);
-            string result;
-            if (dozen == 1)
-            {
-                result = HeplersForHW2.ValidateTen(number);
-            }
-            else
-            {
-                result = $"{HeplersForHW2.ValidateDozen(number)} {HeplersForHW2.ValidateUnits(number)}";
-            }
+            string result = HelpersForHW2.MakeNumber(number);
             HelpersForConsole.OutPutInConsole(5, $"{result}");
         }
     }

@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HomeWork1.Tests
+namespace HWTests
 {
     public class HW2Tests
     {
@@ -48,7 +48,7 @@ namespace HomeWork1.Tests
 
         public void Solution2OutPutCoordinatePlaneNumberTests(int quarterNumber, string expected)
         {
-            string actual = HelpersForHW2.OutPutCoordinatePlaneNumber(quarterNumber);
+            string actual = HelpersForHW2.OutPutCoordinatePlaneNumberForConsole(quarterNumber);
             Assert.AreEqual(expected, actual);
         }
 
@@ -64,7 +64,7 @@ namespace HomeWork1.Tests
         [TestCase(10, 1)]
         public void Solution5LookingForDozenTests(int number, int expected)
         {
-            int actual = HelpersForHW2.LookingForDozen(number);
+            int actual = HelpersForHW2.GetNumberOfDozens(number);
             Assert.AreEqual(expected, actual);
         }
 
@@ -72,7 +72,7 @@ namespace HomeWork1.Tests
         [TestCase(10, 0)]
         public void Solution5LookingForUnitTests(int number, int expected)
         {
-            int actual = HelpersForHW2.LookingForUnit(number);
+            int actual = HelpersForHW2.GetNumberOfUnits(number);
             Assert.AreEqual(expected, actual);
         }
         [TestCase(10, "десять")]
