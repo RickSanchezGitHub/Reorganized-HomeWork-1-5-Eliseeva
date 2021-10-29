@@ -87,7 +87,7 @@ namespace Core
                     }
                 }
             }
-            string indexMaxElement = $" {indexi} {indexj}";
+            string indexMaxElement = $"{indexi} {indexj}";
             return indexMaxElement;
         }
         public static int ElemtntHasMoreNeighbors(int[,] array)
